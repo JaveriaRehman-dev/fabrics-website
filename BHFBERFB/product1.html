@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h2 class="logo">ABUBAKAR <span>FABRICS</span></h2>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="collection.html">Our Collection</a></li>
+    </ul>
+  </nav>
+
+ <div class="product">
+
+  <div class="product-img">
+    <img src="dr1.jpg" alt="Black Organza">
+  </div>
+
+  <div class="product-info">
+
+    <h1>Black Organza</h1>
+
+    <p>
+      Fabric: Black Organza <br>
+      Black resham & sitara detailing <br>
+      Unstitched <br>
+      One Piece Shirt (2.5 yards)
+    </p>
+
+    <div class="price">Rs. 1000</div>
+
+    <a class="whatsapp" href="https://wa.me/923212157795" target="_blank">
+      Order on WhatsApp
+    </a>
+
+  </div>
+
+</div>
+
+ <!-- PRODUCTS -->
+  <section id="container" class="container1 product-related">
+    <div class="grid">
+       <!-- CARDS -->
+      <a href="product1.html" class="card"><img src="dr1.jpg"><h3>Black Organza Shirt</h3>
+      <p class="pricec">Rs. 1000</p></a>
+     
+      <a href="product6.html" class="card"><img src="wdr1.jpg"><h3>Net Dupatta – Elegant Style</h3>
+      <p class="pricec">Rs. 700</p></a>
+      
+      <a href="product12.html" class="card"><img src="wdr2.jpg"><h3>Golden Zari Net Shirt</h3>
+      <p class="pricec">Rs. 1000</p></a>
+     
+      <a href="product18.html" class="card"><img src="kdr6.jpg"><h3>Organza 2-Piece Set</h3>
+      <p class="pricec">Rs. 1700</p></a>
+      
+
+    </div>
+  </section>
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-box">
+      <h2>Abubakar Clothing Store</h2>
+      <p>Premium Unstitched & Fashion Collection</p>
+      <span>© 2026 All Rights Reserved</span>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p><a href="https://wa.me/923212157795"> WhatsApp: 0321-2157795</a></p>
+      <p><a href="mailto:hooransari306@gmail.com">Email: hooransari306@gmail.com</a></p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-box">
+      <h3>Find Us On</h3>
+      <p>📘 Facebook: Khurram Ahmed Ansari</p>
+    </div>
+
+  </div>
+</footer>
+
+
+ <script>
+const cards = document.querySelectorAll('.product-related .card');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('show');
+      }, i * 120); // slower + smoother stagger
+    }
+  });
+}, {
+  threshold: 0.25
+});
+
+cards.forEach(card => observer.observe(card));
+</script>
+</body>
+</html>
+
