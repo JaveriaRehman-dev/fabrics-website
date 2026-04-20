@@ -8,7 +8,11 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #faf7f5
+  background: #faf7f5;
+   margin: 0;
+  padding-top: 60px;
+  background: #f8f8f8;
+  line-height: 1.6;
 }
 
 /* NAVBAR */
@@ -627,7 +631,7 @@ body {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .product {
-    flex-direction: column;
+     flex-direction: column;
     padding: 30px;
   }
 
@@ -637,13 +641,13 @@ body {
 
   .product-info h1 {
     font-size: 30px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .product-info p,
   .price,
   .whatsapp {
-    text-align: center;
+    /* text-align: center; */
   }
 
   .whatsapp {
